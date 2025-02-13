@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        iframe{
+            width: 200px;
+            height: 200px;
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+    page 2 <br>
+    regular <br>
+    <iframe src="./1.html?key=value" id="crossDomainIframe" frameborder="0"></iframe>
+    <!-- <script>
+        window.onload = function() {
+            document.addEventListener("DOMContentLoaded", function() {
+                const iframe = document.getElementById("crossDomainIframe");
+                iframe.onload = function() {
+                    const data = { key: "value" }; // 替换为你的参数
+                    iframe.contentWindow.postMessage(data, "file:///D:/1code/work/2025/1111/1.html"); // 指定目标窗口的源
+                };
+            });
+        };
+    </script> -->
+
+
+</body>
+</html>
